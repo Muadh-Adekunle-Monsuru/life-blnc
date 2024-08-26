@@ -1,0 +1,21 @@
+.custom {
+	/* The second value here is a fallback. */
+	cursor: url('./cursor.svg'), auto;
+
+	/* You may need coordinates to adjust the pointer
+     for example, the custom cursor is circular and you want
+     the middle to be where you click */
+	/* cursor: url(target.svg) 15 15, move; */
+}
+
+.player-wrapper {
+	position: relative;
+	width: 100%;
+	padding-top: (16 / 9) * 100%; /*Player ratio: 100 / (1280 / 720)*/
+}
+
+.react-player {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
