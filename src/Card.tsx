@@ -1,5 +1,4 @@
-import { color, motion, useAnimate } from 'framer-motion';
-import { useEffect } from 'react';
+import { motion, useAnimate } from 'framer-motion';
 export default function Card({
 	imageUrl,
 	text,
@@ -34,7 +33,7 @@ export default function Card({
 			initial={{ width: '50%' }}
 			whileHover={{ width: '100%' }}
 			transition={{ type: 'tween' }}
-			className='group relative w-full h-[80vh] bg-white rounded-3xl overflow-hidden'
+			className='group relative w-full h-[60vh] bg-white rounded-3xl overflow-hidden'
 		>
 			<img
 				src={imageUrl}

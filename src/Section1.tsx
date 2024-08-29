@@ -5,7 +5,7 @@ import VideoOverlay from './VideoOverlay';
 export default function Section1() {
 	const [showVideo, setShowVideo] = useState(false);
 	return (
-		<div className='h-screen sticky top-0 left-0 overflow-hidden  w-full'>
+		<div className='h-screen sticky top-0 left-0 overflow-hidden  w-full z-10'>
 			<style>
 				{`
                 .player{
@@ -22,7 +22,7 @@ export default function Section1() {
 			</style>
 			<div className='player bg-blue-50 h-full'>
 				<ReactPlayer
-					className='react-player absolute top-0 left-0 object-fill h-full min-w-full bg-red-300'
+					className='react-player absolute top-0 left-0 object-fill h-full min-w-full bg-[url("/heroPoster.jpg")] bg-cover'
 					url='https://vimeo.com/723853921'
 					height='100%'
 					width='100%'
@@ -49,7 +49,7 @@ export default function Section1() {
 				className='w-full absolute h-screen top-0 left-0 custom blur-sm'
 				onClick={() => setShowVideo((prev) => !prev)}
 			></div>
-			<p className='text-7xl absolute bottom-20 left-6 font-black text-white uppercase w-1/2 custom'>
+			<p className='lg:text-7xl text-5xl absolute bottom-20 left-6 font-black text-white uppercase md:w-1/2 custom'>
 				Shaping the future of water
 			</p>
 		</div>
